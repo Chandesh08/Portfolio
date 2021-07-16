@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pirates</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url("back.gif");
+            background-size: cover;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .center1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="test"><img src="pirates.png" alt="Pirates"></div>
+        <div class="center1">
+            <a type="button" class="btn btn-danger" href="https://www.datapirates.tk/dolibarr7/htdocs/">Dolibarr 7</a>
+            <a type="button" class="btn btn-danger" href="https://www.datapirates.tk/dolibarr9/htdocs/">Dolibarr 9</a>
+            <a type="button" class="btn btn-danger" href="https://www.datapirates.tk/dolibarr13/htdocs/">Dolibarr 13 <i class="fa fa-arrow-circle-right"></i></a>
+            
+        </div>
+        <div class="center1"><h5 style="color: white;"><b>Team Members: </b><span id="app" style="font-family: fantasy;"></span></h5></div>
+    </div>
+    <!--<h4 class="center1" style="color: white"><b>Team Members: </b>Chandesh Lillmond, Tanweeruddin Beeharry, Mohesh Daboo</h4>-->
+</body>
+<script>
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString('Chandesh Lillmond')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Tanweeruddin Beeharry')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Mohesh Daboo')
+        .pauseFor(2000)
+        .start();
+
+</script>
+
+</html>
