@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from tavonline.net/html/mat/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Mar 2021 14:53:03 GMT -->
+
+<head>
+
+    <!-- Simple Page Needs
+================================================== -->
+    <title>Chandeh LILLMOND</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Resume">
+    <meta name="keywords" content="personal, vcard, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon
+================================================== -->
+    <link href="images/u.png" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- CSS
+================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/colors/blue.css" id="color" />
+    <script src="js/vanilla.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Google Web fonts
+================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+    <!-- Font Icons
+================================================== -->
+    <link rel="stylesheet" href="icon-fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="icon-fonts/web-design/flaticon.css" />
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <style>
+	body{
+		background-image: url(images/back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	}
+	#content{
+	background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+header nav{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: inline-block;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 70px;
+
+}
+.site-form .site-input{
+    width: 100%;
+    height: 45px;
+    border: 0;
+    color: #000;
+    border-bottom: solid 1px #dfdfdf;
+	background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 13px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    outline: 0;
+}
+
+.site-form .site-area{
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px #dfdfdf;
+    font-size: 13px;
+    padding: 20px 0 0 10px;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+.site-form .site-area{
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px #dfdfdf;
+    font-size: 13px;
+    padding: 20px 0 0 10px;
+    min-height: 100px;
+    margin-bottom: 15px;
+	background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+background: rgba( 255, 255, 255, 0.25 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+
+            width: 100%;
+            text-align: center;
+            height: 100%;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: red;
+            display: block;
+            transition: 0.3s;
+            z-index: 100000;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+        }
+
+        .test {
+            border-radius: 5px;
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+        .test:hover {
+            transform-style: preserve-3d;
+            transform: translateZ(20px) scaleY(1);
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #425cbb;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #536cca;
+        }
+
+        .hh {
+            padding-left: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloading -->
+    <div id="preloader">
+        <div class="spinner">
+        </div>
+    </div>
+    <!--<div id="particles-js"></div>-->
+    <!-- Wrapper -->
+    <div class="wrapper top_60 container">
+
+        <div class="row">
+
+            <!-- Profile Section
+================================================== -->
+            <div class="col-lg-3 col-md-4">
+                <div class="profile test">
+                    <div class="profile-name">
+                        <span class="name">LILLMOND Chandesh</span><br>
+                        <span class="job">Student</span>
+                    </div>
+                    <figure class="profile-image">
+                        <img src="images/pic.jpg" alt="Profil Pic">
+                    </figure>
+                    <ul class="profile-information">
+                        <li></li>
+                        <li>
+                            <p><span>Name:</span> LILLMOND Chandesh</p>
+                        </li>
+                        <li>
+                            <p><span>Birthday:</span> 06 August 2000</p>
+                        </li>
+                        <li>
+                            <p><span>Email:</span> lillmond@umail.utm.ac.mu</p>
+                        </li>
+                        <li>
+                            <p><span>Skype:</span> Chandesh06</p>
+                        </li>
+                    </ul>
+                    <div class="col-md-12">
+                        <a class="site-btn icon" href="assignment/ChandeshCV.pdf" download>Download Cv <i class="fa fa-download" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Tab Container Div -->
+            <div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+
+                <!-- Header
+================================================== -->
+                <div class="row">
+                    <header class="col-md-12">
+                        <nav>
+                            <div class="row">
+                                <!-- navigation bar -->
+                                <div class="col-md-8 col-sm-8 col-xs-4">
+                                    <ul class="tabs">
+                                        <li class="tab">
+                                            <a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li class="tab"><a href="#resume">RESUME</a></li>
+                                        <li class="tab"><a href="#portfolio">PORTFOLIO</a></li>
+
+                                        <li class="tab"><a href="#contact">CONTACT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+                                    <a href="mailto:chandeshlillmond06@gmail.com" class="pull-right site-btn icon hidden-xs">Hire Me <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                                    <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                    <div class="hidden-md social-icons pull-right">
+                                        <a class="fb" href="https://www.facebook.com/chandesh.lillmond"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a class="tw" href="https://mu.linkedin.com/in/chandesh-lillmond-23348817a"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a class="ins" href="https://www.instagram.com/chandesh_lillmond/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a class="ins" href="https://github.com/Chandesh08"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </header>
+
+                    <!-- Page Content
+    ================================================== -->
+                    <div class="col-md-12">
+                        <div id="content" class="panel-container">
+
+                            <!-- Home Page
+            ================================================== -->
+                            <div id="home">
+                                <!-- Text Section -->
+                                <div class="row">
+                                    <section class="about-me line col-md-12 padding_30 padbot_45">
+                                        <div class="section-title"><span></span>
+                                            <h2>About Me</h2>
+                                        </div>
+                                        <p class="top_30">
+										My name is Chandesh Lillmond, and I am currently a third year student at University of Technology Mauritius. I am passionate about my work that I have been doing in the university as coursework. Because I love what I do, I have a steady source of motivation that drives me to do my best. This passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I learn how to use Photoshop through Youtube to improve or create photos and graphics for my web development courseworks.
+                                            <br/>
+                                            <br/>
+											I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive toward. I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness. I think positively and can execute on difficult tasks. I’m not an individual who needs to be micromanaged. Rather, when given a specific task, I can figure out the best ways to solve the problem in an autonomous manner.
+                                        </p>
+										<br/>
+                                            <br/>
+										<div class="section-title"><span></span>
+                                            <h2>Career Statement</h2>
+                                        </div>
+										<p class="top_30">I am a person with a keen interest in Software programs, possessing good interpersonal and analytical skills, who wish to use technical knowledge catering to the needs of the company. I wish to work with a diverse team that works towards contributing to the company’s vision and goals.</p>
+										<br/>
+                                            <br/>
+											<div class="section-title"><span></span>
+                                            <h2>Current Project</h2>
+                                        </div>
+										<p class="top_30">As final year project, I am writing a research paper on eLearning based on machine learning. The goal of the project is to refine and ease the use of eLearning platforms for students and teachers with the help of Artificial Intelligence</p>
+                                    </section>
+                                </div>
+                                <!-- Skills Section -->
+                            </div>
+
+                            <!-- Resume Page================================================== -->
+                            <div id="resume">
+                                <!-- Resume Section -->
+                                <div class="row">
+                                    <section class="education">
+                                        <div class="section-title top_30"><span></span>
+                                            <h2>Resume</h2>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Working History -->
+                                            <div class="working-history col-md-6 padding_15 padbot_30">
+                                                <ul class="timeline col-md-12 top_30">
+                                                    <li><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        <h2 class="timeline-title">Professional Summary</h2>
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Excellent understanding of programming</h3>
+														<br/>
+                                                        <h3 class="line-title">language</h3>
+
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Proficiency in developing web applications</h3>
+
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Adaptability</h3>
+
+                                                    </li><li>
+                                                        <h3 class="line-title">Teamwork</h3>
+
+                                                    </li>
+													<li>
+                                                        <h3 class="line-title">Agile frameworks</h3>
+
+                                                    </li>
+													<li>
+                                                        <h3 class="line-title">Interpersonal communication skills</h3>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Education History -->
+                                            <div class="education-history col-md-6 padding_15 padbot_30">
+                                                <ul class="timeline col-md-12 top_30">
+                                                    <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                        <h2 class="timeline-title">Technical Skills</h2>
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Programming Language</h3>
+														<br/>
+                                                        <p class="little-text">Java, PHP, C#, JavaScript, SQL, HTML, CSS, ASP.net, PL/SQL</p>
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Software Application</h3>
+                                                        <br/>
+                                                        <p class="little-text">XAMPP, Visual Studio, Android Studio, Dreamweaver, NetBeans, Anaconda, PyCharm</p>
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Database Management</h3>
+                                                        <br/>
+                                                        <p class="little-text">MySQL/MariaDB, SQL Developer, MSSQL</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+								
+								<div class="row">
+                    <section class="services line graybg col-md-12 padding_50 padbot_50">
+                    <div class="section-title bottom_45"><span></span><h2>Other Activity</h2></div>
+                    <div class="row">
+                        <!-- a service -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="service test">
+                                <div class="icon">
+                                    <i class="flaticon-stethoscope"></i>
+                                </div>
+                                <span class="title">Trainings Attended</span>
+                                <p class="little-text">Git Training (2021)</p>
+                            </div>
+                        </div>
+                        <!-- a service -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="service test">
+                                <div class="icon">
+                                    <i class="flaticon-heart"></i>
+                                </div>
+                                <span class="title">Competitions Attended</span>
+                                <p class="little-text">TechWar (2021)</p>
+                                <p class="little-text">Front-End Battle (2021)</p>
+                                <p class="little-text">WebCup (2021)</p>
+                            </div>
+                        </div>
+						<!-- a service -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="service test">
+                                <div class="icon">
+                                    <i class="flaticon-heart"></i>
+                                </div>
+                                <span class="title">Seminars Attended</span>
+                                <p class="little-text">DATA & BI by Accenture (2021)</p>
+                                <p class="little-text">Girls In ICT Day (2021)</p>
+                                <p class="little-text">Blockchain and Cryptocurrency (2021)</p>
+                                <p class="little-text">An Introduction to Microsoft Azure (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+                            </div>
+                            <!-- Portfolio Page ================================================== -->
+                            <div id="portfolio" class="row bottom_45">
+                                <section class="col-md-12">
+                                    <div class="col-md-12 content-header bottom_15">
+                                        <div class="section-title top_30 bottom_30"><span></span>
+                                            <h2>Portfolio</h2>
+                                        </div>
+                                        <div id="filters-container">
+                                            <!-- '*' means shows all item elements -->
+                                            <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">All</div>
+                                            <div data-filter=".webdesign" class="cbp-filter-item">Web Development</div>
+                                            <div data-filter=".motion" class="cbp-filter-item">Mobile Application Development</div>
+                                            <div data-filter=".illustration" class="cbp-filter-item">Analysis &amp; Design</div>
+                                            <div data-filter=".photography" class="cbp-filter-item">Research Paper</div>
+                                        </div>
+                                    </div>
+                                    <div id="grid-container" class="top_60">
+                                        <!-- a work -->
+                                        <div class="cbp-item webdesign">
+                                            <a href="#" onclick="openNav()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/pic1.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">MTours</span><br />
+                                                        <span class="info">MTours is an online platform to book all your incredible tours, things to do and activities to enhance your holiday attractions in Mauritius. </span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a video work -->
+                                        <div class="cbp-item motion">
+                                            <a href="#" onclick="openNav1()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/framework-7.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">UTM Hybrid App</span><br />
+                                                        <span class="info">A hybrid mobile application targeted to current and prospective students of University of
+                                                            Technology, Mauritius. Both current and prospective students is able to view events and news
+                                                            related to UTM and they also can send queries to the administration. </span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a image work -->
+                                        <div class="cbp-item photography">
+                                            <a href="#" onclick="openNav5()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/download.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">Face Recognition</span><br />
+                                                        <span class="info">Solving for Pose Variation in Group Face
+                                                            Recognition for Attendance Marking using Real
+                                                            Time Video</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a work -->
+                                        <div class="cbp-item webdesign">
+                                            <a href="#" onclick="openNav4()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/job.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">MoCoolMaid</span><br />
+                                                        <span class="info">A job portal for maids.</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a video work -->
+                                        <div class="cbp-item motion">
+                                            <a href="#" onclick="openNav2()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/android.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">General knowledge Quiz App</span><br />
+                                                        <span class="info">This assignment deals with development of android-based true-false question quiz app, namely: General
+                                                            Knowledge Quiz. This application is developed for entertainment purposes.</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cbp-item motion">
+                                            <a href="#" onclick="openNav3()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/api.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">Movie App</span><br />
+                                                        <span class="info">A Hybrid Mobile App is implemented to use the functionalities provided by the Web Service (OMDb API). The
+                                                            Hybrid App is implemented using Framework7.</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a work -->
+                                        <div class="cbp-item webdesign">
+                                            <a href="#" onclick="openNav6()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/json.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">Working with
+                                                            XML & JSON Data
+                                                            Formats</span><br />
+                                                        <span class="info">Displaying data regarding earthquakes from QuakeML and GeoJson</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a work -->
+                                        <div class="cbp-item webdesign">
+                                            <a href="#" onclick="openNav7()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/api.png" alt="">
+                                                    <figcaption>
+                                                        <span class="title">Book API</span><br />
+                                                        <span class="info">This API is intended for developers who want to write
+                                                            applications that can interact with Books.</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- a work -->
+                                        <div class="cbp-item illustration">
+                                            <a href="#" onclick="openNav8()">
+                                                <figure class="test">
+                                                    <div class="icon">
+                                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img src="images/de.jpg" alt="">
+                                                    <figcaption>
+                                                        <span class="title">Sales and Inventory Management System</span><br />
+                                                        <span class="info">Le Chic Trading, the garment company
+                                                            is using paper pen format to keep their records till the day wishes to use computer technology to keep track
+                                                            of all its transactions and day to day operation to achieve its business goal. </span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <!-- Contact Page
+            ================================================== -->
+                            <div id="contact">
+                                <div class="row">
+                                    <!-- Contact Form -->
+                                    <section class="contact-form col-md-6 padding_30 padbot_45">
+                                        <div class="section-title top_15 bottom_30"><span></span>
+                                            <h2>Contact Form</h2>
+                                        </div>
+                                        <form class="site-form" id="javascript_form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input class="site-input" type="text" name="subject" placeholder="E-mail">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <textarea class="site-area" name="text" placeholder="Message"></textarea>
+                                                </div>
+                                                
+                                            </div>
+											 <div class="col-md-12 top_15 bottom_30">
+                                                    <button class="site-btn" id="js_send" type="submit">Submit</button>
+                                                </div>
+                                        </form>
+                                       
+                                    </section>
+                                    <!-- Contact Informations -->
+                                    <section class="contact-info col-md-6 padding_30 padbot_45">
+                                        <div class="section-title top_15 bottom_30"><span></span>
+                                            <h2>Contact Informations</h2>
+                                        </div>
+                                        <ul>
+                                            <li><span>Address:</span> H 04 Chebel Road Residence Le Chebec Beau Bassin</li>
+                                            <li><span>Phone:</span> +230 57191624</li>
+                                            <li><span>E-mail:</span> lillmond@umail.utm.ac.mu</li>
+                                            <li><span>Skype:</span> Chandesh06</li>
+                                            <li>
+                                                <div class="social-icons top_15">
+                                                    <a class="fb" href="https://www.facebook.com/chandesh.lillmond"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a class="tw" href="https://mu.linkedin.com/in/chandesh-lillmond-23348817a"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    <a class="ins" href="https://www.instagram.com/chandesh_lillmond/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                                    <a class="ins" href="https://github.com/Chandesh08"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <!-- Contact Map -->
+
+                                </div>
+                            </div>
+
+                        </div><!-- Content - End -->
+                    </div> <!-- col-md-12 end -->
+                </div><!-- row end -->
+                <!-- Footer
+================================================== -->
+            </div> <!-- Tab Container - End -->
+        </div> <!-- Row - End -->
+    </div> <!-- Wrapper - End -->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1Knlp_K4FSj2JgQ5SrAo-ECuB2-h4xq6v/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav1" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1UViHwHtjI1vfTAGewz6AJpImuCAPVBEg/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav2" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1bMxxaY5uNvIyHOqBiUHPZYfWLwBSlW2q/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav3" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1Nr3uuJEM86R7KMKG6fM96Jr01lVka4_k/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav4" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1PGsbRRamEj0uHlwURvmeZepJyYlLS7wh/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav5" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1C55i3UHnYKlGvjKrgBibdD2PUZlt8Rdm/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav6" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1AQV3aZVKpD1QiQMDgzR9x8ixYkOftSYI/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav7" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1x4ndPSwRiNTcvXiMb_9QobULkkchkvQ1/preview" width="100%" height="100%" />
+        </div>
+    </div>
+    <div id="myNav8" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
+        <div class="overlay-content">
+            <embed src="https://drive.google.com/file/d/1w8x2XZCFcw2aI69E0YJoj6bKvcJWtszA/preview" width="100%" height="100%" />
+        </div>
+    </div>
+
+    <!-- Javascripts
+================================================== -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easytabs.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <!-- for color alternatives -->
+    <script src="js/jquery.cookie-1.4.1.min.js"></script>
+	
+	<script>
+
+    //update this with your js_form selector
+    var form_id_js = "javascript_form";
+
+    var data_js = {
+        "access_token": "tsmqdpe7kqzwks2ksa6dtycp"
+    };
+
+    function js_onSuccess() {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+    }
+
+    function js_onError(error) {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+    }
+
+    var sendButton = document.getElementById("js_send");
+
+    function js_send() {
+        sendButton.value='Sending…';
+        sendButton.disabled=true;
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+                js_onSuccess();
+            } else
+            if(request.readyState == 4) {
+                js_onError(request.response);
+            }
+        };
+
+        var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+        var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+        data_js['subject'] = subject;
+        data_js['text'] = message;
+        var params = toParams(data_js);
+
+        request.open("POST", "https://postmail.invotes.com/send", true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        request.send(params);
+
+        return false;
+    }
+
+    sendButton.onclick = js_send;
+
+    function toParams(data_js) {
+        var form_data = [];
+        for ( var key in data_js ) {
+            form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+        }
+
+        return form_data.join("&");
+    }
+
+    var js_form = document.getElementById(form_id_js);
+    js_form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
+</script>
+
+    <script>
+         var send = function() {
+                        var qm = document.getElementById("mail").value;
+                        var qd = document.getElementById("msg").value;
+                        Email.send({
+                                Host: "smtp.gmail.com",
+                                Username: "riverbay06@gmail.com",
+                                Password: "riverbay_2020",
+                                To: "chandeshlillmond06@gmail.com",
+                                From: "riverbay06@gmail.com",
+                                Subject: "Hello",
+                                Body: 'Dear Admin, I am writing you this because of the following queries.<br>' + qd + "<br/>From: " + qm,
+                            })
+                            .then(
+                                message => alert("Email sent successfully")
+                            );
+
+
+                    }
+        
+        
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        function openNav1() {
+            document.getElementById("myNav1").style.width = "100%";
+        }
+
+        function closeNav1() {
+            document.getElementById("myNav1").style.width = "0%";
+        }
+
+        function openNav2() {
+            document.getElementById("myNav2").style.width = "100%";
+        }
+
+        function closeNav2() {
+            document.getElementById("myNav2").style.width = "0%";
+        }
+
+        function openNav3() {
+            document.getElementById("myNav3").style.width = "100%";
+        }
+
+        function closeNav3() {
+            document.getElementById("myNav3").style.width = "0%";
+        }
+
+        function openNav4() {
+            document.getElementById("myNav4").style.width = "100%";
+        }
+
+        function closeNav4() {
+            document.getElementById("myNav4").style.width = "0%";
+        }
+
+        function openNav5() {
+            document.getElementById("myNav5").style.width = "100%";
+        }
+
+        function closeNav5() {
+            document.getElementById("myNav5").style.width = "0%";
+        }
+
+        function openNav6() {
+            document.getElementById("myNav6").style.width = "100%";
+        }
+
+        function closeNav6() {
+            document.getElementById("myNav6").style.width = "0%";
+        }
+
+        function openNav7() {
+            document.getElementById("myNav7").style.width = "100%";
+        }
+
+        function closeNav7() {
+            document.getElementById("myNav7").style.width = "0%";
+        }
+
+        function openNav8() {
+            document.getElementById("myNav8").style.width = "100%";
+        }
+
+        function closeNav8() {
+            document.getElementById("myNav8").style.width = "0%";
+        }
+
+    </script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".test"), {
+            max: 25,
+            speed: 400
+        });
+
+    </script>
+
+    <link rel="stylesheet" href="css/Demo.min.css" />
+
+
+</body>
+
+<!-- Mirrored from tavonline.net/html/mat/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Mar 2021 14:53:40 GMT -->
+
+</html>
