@@ -1742,7 +1742,7 @@ footer .footer .copyright a:hover{
     header nav .menuout .menuin{
         width: 100%;
         background: #fff;
-        position: absolute;
+        position: relative;
         z-index: 4;
         margin-top: 25px;
         border-radius: 8px;
